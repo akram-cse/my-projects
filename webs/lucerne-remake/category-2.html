@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app/category-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="sticky-top">
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+
+                <div class="nav-items d-flex align-items-center gap-4">
+                    <a class="language  segoe">International - English <span class="ms-2"> <i
+                            class="fa-solid fa-angle-down"></i> </span> </a>
+                    <a class="login more-bold segoe"><i class="fa-regular fa-circle-user"></i> <span
+                            class="ms-1"> Login</span></a>
+                    <a class="signup more-bold segoe"><i class="fa-solid fa-user-plus"></i> <span
+                            class="ms-1"> Sign up now</span></a>
+                    <a class="search-btn more-bold segoe">
+                        <form class="position-relative">
+                            <input type="text" class="form-control segoe custom-search-input" placeholder="Search">
+                            <span class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+                        </form>
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg my-navbar ">
+        <div class="container ">
+
+            <a class="navbar-brand logo-box" href="#">
+                <img class="logo-img" src="assets/img/logo.png" alt="">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="offcanvas offcanvas-end" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <img class="logo-img" src="assets/img/logo.png" alt=" ">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav py-1">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Products <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Product Catalog</a></li>
+                                <li><a class="dropdown-item" href="#">By Category</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Academy <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recipes</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trends & Inspiration</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Sustainability <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mission</a></li>
+                                <li><a class="dropdown-item" href="#">Reports</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                About Us <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section class="bg-gradiant">
+    <div class="container">
+        <div class="flex-align">
+            <div class="header-title">
+                <h1 class="titlee"> Products </h1>
+            </div>
+        </div>
+
+
+        <div class="hero-container">
+            <div class="left">
+
+
+                <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasExample"
+                     aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <div class="filter-sidebar  ">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <span class="refine-title">REFINE BY:</span>
+                                <a href="#" class="clear-link">Clear all</a>
+                            </div>
+
+                            <div class="position-relative mb-4">
+                                <input type="text" class="form-control search-input py-2" placeholder="">
+                                <button class="search-icon-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+
+                            <div class="accordion accordion-flush" id="filterAccordion">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseCategory">
+                                            CATEGORY
+                                        </button>
+                                    </h2>
+                                    <div id="collapseCategory" class="accordion-collapse collapse show">
+                                        <div class="accordion-body">
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat1">
+                                                <label class="form-check-label" for="cat1">Chocolate</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat2">
+                                                <label class="form-check-label" for="cat2">Cocoa ingredients</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat3">
+                                                <label class="form-check-label" for="cat3">Nut ingredients</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat4">
+                                                <label class="form-check-label" for="cat4">Coatings & Fillings</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat5">
+                                                <label class="form-check-label" for="cat5">Inclusions</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat6">
+                                                <label class="form-check-label" for="cat6">Decorations</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat7">
+                                                <label class="form-check-label" for="cat7">Toppings & Sauces</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat8">
+                                                <label class="form-check-label" for="cat8">Instants & Mixes</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat9">
+                                                <label class="form-check-label" for="cat9">Moulds</label>
+                                            </div>
+                                            <div class="form-check mb-2">
+                                                <input class="form-check-input" type="radio" name="category" id="cat10">
+                                                <label class="form-check-label" for="cat10">Drinks</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseComponent">
+                                            COMPONENT
+                                        </button>
+                                    </h2>
+                                    <div id="collapseComponent" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Ganaches</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Mousses</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseShape">
+                                            SHAPE
+                                        </button>
+                                    </h2>
+                                    <div id="collapseShape" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check1">
+                                                <label class="form-check-label" for="Check1">Bag in box</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check2">
+                                                <label class="form-check-label" for="Check2">Bag large up to 30
+                                                    kg</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check3">
+                                                <label class="form-check-label" for="Check3">Bag large up to 30
+                                                    kg</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check4">
+                                                <label class="form-check-label" for="Check4">Chocolate
+                                                    decorations</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check5">
+                                                <label class="form-check-label" for="Check5">Block</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check6">
+                                                <label class="form-check-label" for="Check6">Blossoms</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check7">
+                                                <label class="form-check-label" for="Check7">Bucket/box up to 15
+                                                    kg</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check8">
+                                                <label class="form-check-label" for="Check8">Chips</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check9">
+                                                <label class="form-check-label" for="Check9">Bucket/box up to 5
+                                                    kg</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="Check10">
+                                                <label class="form-check-label" for="Check10">Callets™</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseComponent">
+                                            SUITABLE FOR
+                                        </button>
+                                    </h2>
+                                    <div id="collapseComponent" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="suit1">
+                                                <label class="form-check-label" for="suit1">Halal</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="suit2">
+                                                <label class="form-check-label" for="suit2">Kosher</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="suit3">
+                                                <label class="form-check-label" for="suit3">Kosher Pareve</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="suit4">
+                                                <label class="form-check-label" for="suit4">Kosher Dairy</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="suit5">
+                                                <label class="form-check-label" for="suit5">Vegan</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="suit6">
+                                                <label class="form-check-label" for="suit6">Vegeterian</label>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefree">
+                                            FREE FROM
+                                        </button>
+                                    </h2>
+                                    <div id="collapsefree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkDairy">
+                                                <label class="form-check-label" for="checkDairy">Dairy Free</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkEFree">
+                                                <label class="form-check-label" for="checkEFree">E Free</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkGluten">
+                                                <label class="form-check-label" for="checkGluten">Not Gluten</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkLecithin">
+                                                <label class="form-check-label" for="checkLecithin">Without
+                                                    lecithin</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSustainability">
+                                            SUSTAINABILITY
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSustainability" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkCocoaHorizons">
+                                                <label class="form-check-label" for="checkCocoaHorizons">Cocoa Horizons
+                                                    Program</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkFairtrade">
+                                                <label class="form-check-label" for="checkFairtrade">Fairtrade</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkOrganic">
+                                                <label class="form-check-label" for="checkOrganic">Organic</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkRainforest">
+                                                <label class="form-check-label" for="checkRainforest">Rainforest
+                                                    Alliance</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkTraceable">
+                                                <label class="form-check-label" for="checkTraceable">Traceable
+                                                    beans</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkBio">
+                                                <label class="form-check-label" for="checkBio">bio</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item border-bottom">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseBrands">
+                                            BRANDS
+                                        </button>
+                                    </h2>
+                                    <div id="collapseBrands" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkASM">
+                                                <label class="form-check-label" for="checkASM">ASM</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="checkAmericanAlmond">
+                                                <label class="form-check-label" for="checkAmericanAlmond">American
+                                                    Almond</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input"
+                                                       id="checkBarryCallebaut">
+                                                <label class="form-check-label" for="checkBarryCallebaut">Barry
+                                                    Callebaut</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkCacaoBarry">
+                                                <label class="form-check-label" for="checkCacaoBarry">Cacao
+                                                    Barry</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkCallebaut">
+                                                <label class="form-check-label" for="checkCallebaut">Callebaut</label>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="checkCarma">
+                                                <label class="form-check-label" for="checkCarma">Carma</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="right ">
+                <div class=" d-flex flex-column w-100">
+                    <div class="top-section d-flex justify-content-between align-items-center">
+                        <p class="product-count mb-0">
+                            679 products
+                        </p>
+
+                        <button class="btn btn-filter rounded-pill d-block d-lg-none" type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            Filter
+                        </button>
+                    </div>
+                    <div class="black-line"></div>
+
+                    <div class="d-flex align-items-center">
+                        <span class="me-3">Selected filters:</span>
+
+                        <div class="filter-badge">
+                            Callebaut
+                            <a href="#" class="close-icon">×</a>
+                        </div>
+                    </div>
+
+                    <div class="black-line"></div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="abs-img">
+                                <img src="assets/img/sensory-wheel-banner-background2.jpg" alt="">
+
+                                <div class="img-content px-3">
+                                    <p class="title-big mb-2 fw-semibold text-white">FIND YOUR PERFECT MATCH</p>
+                                    <p class="subtitle   text-white">
+                                        Introducing the new Callebaut Taste Wheel™, a tool to help you
+                                        decode flavours, discover new taste profiles and bring more
+                                        precision to your creations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-3">
+
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card product-card">
+                                <div class="compare-icon">
+                                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                </div>
+                                <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                                <div class="brand-logo-small text-center">
+                                    <img src="assets/img/logo%20(1).png" alt="">
+                                </div>
+
+                                <div class="card-body pt-2">
+                                    <h5 class="product-title">CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE -
+                                        SILKY GHANA - 2.5KG - CALLETS</h5>
+                                    <p class="product-desc">Gentle sweetness unfolds into rich chestnut warmth with
+                                        bright plum freshness, delivering smooth, luxurious texture and seamless
+                                        balance.</p>
+
+                                    <div class="fluidity-section">
+                                        <p> Fluidity: </p>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+                                        <i class="fa-solid fa-droplet fa-xl"></i>
+
+                                    </div>
+
+                                    <div class="product-specs">
+                                        <div>40% Min. % Dry cocoa solids</div>
+                                        <div>20% Min. % Dry Milk solids</div>
+                                    </div>
+
+                                    <div class="d-flex mt-3">
+                                        <button class="btn btn-more-info">More info</button>
+                                        <button class="btn btn-buy-now">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="community-section">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-lg-6 col-12">
+                <div class="image-div">
+                    <img src="assets/img/promo-image-community-block.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+
+                <div class="orange-bg d-flex flex-column justify-content-center">
+                    <div class="top-text mb-4">
+                        JOIN OUR <br> COMMUNITY <br> TODAY
+                    </div>
+
+                    <div class="top-subtitle mb-4">Be part of a global community of passionate chefs and artisans. Share
+                        inspiration, discover new creations, and grow your craft with Lucerne.
+                    </div>
+
+                    <a href="#" class="btn-custom mt-1">Sign Up</a>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-section">
+
+    <div class="container">
+
+        <div class="top-logo-white d-flex justify-content-center ">
+            <img src="assets/img/logo-white.png" alt="">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="headers">NEWSLETTER</h5>
+                <p class="desc-text">
+                    Join our artisan & chef community for industry news, innovations, and learning. Spam-free: change
+                    your mailing preferences anytime.
+                </p>
+                <button class="btn-custom sm-btn">
+                    Join our community today
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <div class="login-area">
+                    <div class="big-text">Account & settings</div>
+
+                    <a href="#" class="login-link">
+                        <i class="fa-regular fa-circle-user me-2"></i> Login
+                    </a>
+                    <a href="#" class="login-link">
+                        <i class="fa-solid fa-user-plus me-1"></i> Sign up now
+                    </a>
+
+                    <div class="dropdown mt-2">
+                        <a class="dropdown-toggle dropdown-style" href="#" role="button" data-bs-toggle="dropdown">
+                            International - English
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">International - English</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5 class="headers-2">IMPORTANT LINKS</h5>
+                <ul class="links-list">
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Trends & Inspiration</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5 class="headers-2">PRODUCTS</h5>
+                <ul class="links-list">
+                    <li><a href="#">Chocolate</a></li>
+                    <li><a href="#">Cocoa Ingredients</a></li>
+                    <li><a href="#">Nut Ingredients</a></li>
+                    <li><a href="#">Coatings & fillings</a></li>
+                    <li><a href="#">Inclusions</a></li>
+                    <li><a href="#">Decorations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-2 mb-4">
+                <h5 class="headers-2">ACADEMY</h5>
+                <ul class="links-list">
+                    <li><a href="#">About Academy</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Our Chefs</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="container">
+            <div class="d-flex copyright flex-wrap justify-content-end align-items-center">
+                <div>
+                    Copyrights © 2025 by <strong>Lucerne Cocoa and Chocolate Products Limited</strong>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="../assets/js/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
