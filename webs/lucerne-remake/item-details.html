@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app/item-details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="sticky-top">
+    <div class="topbar">
+        <div class="container">
+            <div class="d-flex justify-content-end">
+
+                <div class="nav-items d-flex align-items-center gap-4">
+                    <a class="language  segoe">International - English <span class="ms-2"> <i
+                            class="fa-solid fa-angle-down"></i> </span> </a>
+                    <a class="login more-bold segoe"><i class="fa-regular fa-circle-user"></i> <span
+                            class="ms-1"> Login</span></a>
+                    <a class="signup more-bold segoe"><i class="fa-solid fa-user-plus"></i> <span
+                            class="ms-1"> Sign up now</span></a>
+                    <a class="search-btn more-bold segoe">
+                        <form class="position-relative">
+                            <input type="text" class="form-control segoe custom-search-input" placeholder="Search">
+                            <span class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i> </span>
+                        </form>
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg my-navbar ">
+        <div class="container ">
+
+            <a class="navbar-brand logo-box" href="#">
+                <img class="logo-img" src="assets/img/logo.png" alt="">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="offcanvas offcanvas-end" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <img class="logo-img" src="assets/img/logo.png" alt=" ">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav py-1">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Products <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Product Catalog</a></li>
+                                <li><a class="dropdown-item" href="#">By Category</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Academy <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Courses</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recipes</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trends & Inspiration</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                Sustainability <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Mission</a></li>
+                                <li><a class="dropdown-item" href="#">Reports</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">
+                                About Us <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Team</a></li>
+                                <li><a class="dropdown-item" href="#">Contact</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="chocolate-breadcrumb-bar">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Chocolate</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Chocolates & Couvertures</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 col-md-12 left-section left-padding d-flex flex-column justify-content-between">
+
+        <div>
+            <p class="text-uppercase tittle mb-1  ">Callebaut</p>
+
+            <h1 class=" big-title  mb-3 fw-normal">
+                CALLEBAUT SIGNATURE COLLECTION - MILK ORIGIN CHOCOLATE - SILKY GHANA - 2.5KG - CALLETS
+            </h1>
+
+            <div class="mb-5">
+                <span class="icon-box"><i class="fas fa-comment"></i></span>
+                <span class="icon-box"><i class="fas fa-heart"></i></span>
+                <span class="icon-box"><i class="fas fa-exchange-alt"></i></span>
+            </div>
+        </div>
+
+        <div id="productCarousel" class="carousel carousel-dark slide my-3" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+
+                <div class="carousel-item active">
+                    <img src="assets/img/item-org.png"
+                         class="d-block w-100 product-img" alt="Front View">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="assets/img/10.png"
+                         class="d-block w-100 product-img" style="transform: scaleX(-1);" alt="Back View">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="d-flex gap-3 mb-5">
+            <img src="assets/img/certification-vegetarian.svg" class="verify" alt="">
+            <img src="assets/img/certification-halal.svg" class="verify" alt="">
+            <img src="assets/img/certification-kosher_dairy.svg" class="verify" alt="">
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12 right-section p-5 d-flex flex-column justify-content-start">
+        <div class="right-padding">
+            <p class="item-info">
+                Gentle sweetness unfolds into rich chestnut warmth with bright plum freshness, delivering smooth,
+                luxurious
+                texture and seamless balance.
+            </p>
+
+            <hr class="my-4 border-bottom border-light">
+
+            <div class=" ">
+                <p class=" mb-1   item-info">very high fluidity</p>
+                <div class="fs-4">
+                    <i class="fas fa-tint"></i>
+                    <i class="fas fa-tint"></i>
+                    <i class="fas fa-tint"></i>
+                    <i class="fas fa-tint"></i>
+                    <i class="fas fa-tint"></i>
+                </div>
+            </div>
+
+            <hr class="my-4  border-bottom border-light">
+
+            <div class="row mb-3">
+                <div class="col-12 mb-2">
+                    <span class="number  me-2">40%</span> <span class="infoo">Min. % Dry cocoa solids</span>
+                </div>
+                <div class="col-12 mb-2">
+                    <span class="number   me-2">20%</span> <span class="infoo">Min. % Dry milk solids </span>
+                </div>
+                <div class="col-12 mb-2">
+                    <span class="number   me-2">40%</span> <span class="infoo"> Fat % </span>
+                </div>
+            </div>
+
+            <button class="btn btn-gold w-100 mb-4">
+                Where to buy <i class="fas fa-arrow-right ms-2"></i>
+            </button>
+
+            <div class="mb-3">
+                <label class="mb-2 fw-bold label-btn">Available sizes</label>
+                <select class="form-select bg-dark text-white border-white p-3 rounded-pill">
+                    <option class=" " selected>2.5 kg bag</option>
+                    <option class=" ">1 kg bag</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divide">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 mb-5">
+                <p class="main-text">
+                    The forest regions of Ghana and its time-honoured cultivation practices come together beautifully in
+                    Silky Experience Ghana 40%, where generations of families have been running farms to create
+                    exceptional milk chocolate. This distinguished milk chocolate from our Signature Collection pays
+                    homage to Ghana's status as the world's second-largest cocoa producer. Traditional farming methods
+                    and optimal growing conditions consistently produce beans renowned for their clean, balanced
+                    flavour. The meticulous selection and processing of the beans showcase the qualities that have
+                    established Ghanaian cocoa as the global benchmark for excellence. Silky Ghana 40% offers a smooth,
+                    comforting, and indulgent flavour journey. It opens with a dominant sweet taste and a rich milky
+                    flavour, immediately creating a soft and welcoming first impression. As the tasting unfolds, milky
+                    and roasted cocoa notes emerge, beautifully balanced by the ongoing sweetness. In the second half,
+                    the profile deepens with caramel and roasted cocoa flavours, adding a warm and creamy richness. The
+                    experience finishes with a lingering sweet taste, leaving a lasting impression of comfort and
+                    indulgence. This 40% cocoa couverture is ideal for professional applications where performance and
+                    flavour excellence are paramount. Its superior flow properties and silky texture make it ideal for
+                    precise moulding, elegant enrobing and creating sophisticated ganaches. Its balanced composition
+                    ensures consistent results across a range of applications, from delicate confectionery to complex
+                    dessert components. Silky Ghana 40% provides discerning professionals with the reliability and
+                    quality they expect.
+                </p>
+            </div>
+
+            <div class="col-lg-5 ">
+                <div class="padding-inside">
+                    <h3 class="sidebar-heading">Applications</h3>
+
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="btn-chocolate">Cakes</span>
+                        <span class="btn-chocolate">Beverages</span>
+                        <span class="btn-chocolate">Frozen Desserts</span>
+                        <span class="btn-chocolate">Bars and Tablets</span>
+                        <span class="btn-chocolate">Bread Pudding</span>
+                        <span class="btn-chocolate">Brownies</span>
+                        <span class="btn-chocolate">Candies</span>
+                        <span class="btn-chocolate">Chocolate Cakes</span>
+                        <span class="btn-chocolate">Clusters</span>
+                        <span class="btn-chocolate">Cookies</span>
+                        <span class="btn-chocolate">Cupcakes</span>
+                    </div>
+
+                    <a href="#" class="plus-more">+ More Application</a>
+
+                    <br><br>
+
+                    <h3 class="sidebar-heading">Certifications</h3>
+                    <p class="suitable">
+                        <strong>Suitable For:</strong> Halal, KD-, Vegetarian<br>
+                        <strong>Sustainability:</strong> Supporting Cocoa Horizons Foundation
+                    </p>
+
+                    <br>
+
+                    <h3 class="sidebar-heading">Packaging</h3>
+
+                    <div class="packaging-list">
+                        <div class="packaging-row">
+                            Order code: CHM-L1SIGHA-E5-U70
+                        </div>
+                        <div class="packaging-row">
+                            Shelf life: 18 months
+                        </div>
+                        <div class="packaging-row">
+                            Description: 2.5 kg Bag
+                        </div>
+                        <div class="packaging-row">
+                            Other packages: <a href="#" style="color:inherit; text-decoration: underline;">1kg Bag</a>
+                            <a
+                                    href="#" style="color:inherit; text-decoration: underline;">2.5kg Bag</a> <a
+                                href="#"
+                                style="color:inherit; text-decoration: underline;">10kg
+                            Bag</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="divide">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h2 class="sidebar-2">CHARACTERISTICS</h2>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="stat-box">
+                                <div class="stat-number">40%</div>
+                                <span class="stat-label">Min. % Dry cocoa solids</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="stat-box">
+                                <div class="stat-number">20%</div>
+                                <span class="stat-label">Min. % Dry milk solids</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="stat-box">
+                                <div class="stat-number">40%</div>
+                                <span class="stat-label">Fat %</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-details">
+                        <p class="mb-1"><strong>Chocolate type:</strong> Milk</p>
+                        <p class="mb-1"><strong>range:</strong> <a href="#">Origins Chocolates</a></p>
+                        <p class="mb-1"><strong>product category:</strong> <a href="#">Chocolate</a> <a href="#">Chocolates
+                            & Couvertures</a></p>
+                    </div>
+
+                    <h2 class="sidebar-2">TASTE PROFILE</h2>
+                    <div class="taste-img">
+                        <img src="assets/img/test-profile.png" alt="">
+                        <a href="assets/img/test-profile.png " class="abs-btn"> <i class="fa-solid fa-plus"></i> </a>
+                    </div>
+
+                    <h2 class="video-header-title mt-5">Most prominent flavors:</h2>
+
+                    <div class="tag-container">
+                        <div class="pill-tag">Milky</div>
+                        <div class="pill-tag">Roasted Cocola</div>
+                        <div class="pill-tag">Clasic Caramel</div>
+                    </div>
+
+                    <video controls loop class="video-product">
+                        <source src="assets/img/Product%20-%20Lucerne%20Cocoa%20&%20Chocolate.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <h2 class="sidebar-2 mt-5"> Bean Origin </h2>
+                    <p class="bean-location">Ghana</p>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="padding-inside">
+                        <h2 class="mt-4 sidebar-heading mt-md-0">PAIRING TIPS</h2>
+                        <div class="pairing-list">
+                            <div class="row pairing-item">
+                                <div class="col-6">Cinnamon</div>
+                                <div class="col-6">Speculoos</div>
+                            </div>
+                            <div class="row pairing-item">
+                                <div class="col-6">Gingerbread</div>
+                                <div class="col-6">Saffron</div>
+                            </div>
+                            <div class="row pairing-item">
+                                <div class="col-6">Anise Seeds</div>
+                                <div class="col-6">Mint</div>
+                            </div>
+                            <div class="row pairing-item">
+                                <div class="col-6">Pear</div>
+                                <div class="col-6">Yuzu</div>
+                            </div>
+                            <div class="row pairing-item">
+                                <div class="col-6">Raisin</div>
+                                <div class="col-6">Passion Fruit</div>
+                            </div>
+                            <div class="row pairing-item">
+                                <div class="col-6">Green Apple</div>
+                                <div class="col-6">Golden Delicious</div>
+                            </div>
+                        </div>
+                        <a href="#" class="more-link">+ More pairing tips</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<section class="productss pb-4">
+    <div class="container">
+        <h2 class="products-header-title">RELATED PRODUCTS</h2>
+        <p class="suitable">Explore More Chocolate and Cocoa Ingredients for Tasty and Visually Stunning Finished
+            Goods</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-lg-4">
+                <div class="card product-card">
+                    <div class="compare-icon">
+                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    </div>
+                    <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                    <div class="brand-logo-small text-center">
+                        <img src="assets/img/logo%20(1).png" alt="">
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <h5 class="product-title"> Milk Chocolate - 823 - 2.5kg Callets</h5>
+                        <p class="product-desc">Rich Cocoa, Amber Carmel, Creamy, Vanilla.</p>
+
+
+                        <div class="d-flex justify-content-between  mt-3">
+                            <button class="btn btn-more-info">More info</button>
+                            <button class="btn btn-buy-now">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card product-card">
+                    <div class="compare-icon">
+                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    </div>
+                    <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                    <div class="brand-logo-small text-center">
+                        <img src="assets/img/logo%20(1).png" alt="">
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <h5 class="product-title"> Milk Chocolate - 823 - 2.5kg Callets</h5>
+                        <p class="product-desc">Rich Cocoa, Amber Carmel, Creamy, Vanilla.</p>
+
+
+                        <div class="d-flex justify-content-between  mt-3">
+                            <button class="btn btn-more-info">More info</button>
+                            <button class="btn btn-buy-now">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card product-card">
+                    <div class="compare-icon">
+                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    </div>
+                    <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                    <div class="brand-logo-small text-center">
+                        <img src="assets/img/logo%20(1).png" alt="">
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <h5 class="product-title"> Milk Chocolate - 823 - 2.5kg Callets</h5>
+                        <p class="product-desc">Rich Cocoa, Amber Carmel, Creamy, Vanilla.</p>
+
+
+                        <div class="d-flex justify-content-between  mt-3">
+                            <button class="btn btn-more-info">More info</button>
+                            <button class="btn btn-buy-now">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card product-card">
+                    <div class="compare-icon">
+                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    </div>
+                    <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                    <div class="brand-logo-small text-center">
+                        <img src="assets/img/logo%20(1).png" alt="">
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <h5 class="product-title"> Milk Chocolate - 823 - 2.5kg Callets</h5>
+                        <p class="product-desc">Rich Cocoa, Amber Carmel, Creamy, Vanilla.</p>
+
+
+                        <div class="d-flex justify-content-between  mt-3">
+                            <button class="btn btn-more-info">More info</button>
+                            <button class="btn btn-buy-now">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="card product-card">
+                    <div class="compare-icon">
+                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    </div>
+                    <img src="assets/img/item-org.png" class="card-img-top" alt="Chocolate Bag">
+
+
+                    <div class="brand-logo-small text-center">
+                        <img src="assets/img/logo%20(1).png" alt="">
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <h5 class="product-title"> Milk Chocolate - 823 - 2.5kg Callets</h5>
+                        <p class="product-desc">Rich Cocoa, Amber Carmel, Creamy, Vanilla.</p>
+
+
+                        <div class="d-flex justify-content-between  mt-3">
+                            <button class="btn btn-more-info">More info</button>
+                            <button class="btn btn-buy-now">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center-btn d-flex justify-content-center align-items-center my-5">
+            <a href="#" class="brown-btn rounded-pill"> View More</a>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="big-left">COMMENTS</h2>
+            <a href="#" class="brown-btn-2 rounded-pill"> Add a Commenet</a>
+        </div>
+
+        <div class="center-btn d-flex justify-content-center align-items-center my-5">
+            <p class="mb-0 suitable comment-rem bg-white"> There are no comment yet. </p>
+        </div>
+
+    </div>
+
+</section>
+<div class="last bg-white">
+    <div class="container">
+
+        <div class="community-section">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-6 col-12">
+                        <div class="image-div">
+                            <img src="assets/img/promo-image-community-block.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+
+                        <div class="orange-bg d-flex flex-column justify-content-center">
+                            <div class="top-text mb-4">
+                                JOIN OUR <br> COMMUNITY <br> TODAY
+                            </div>
+
+                            <div class="top-subtitle mb-4">Be part of a global community of passionate chefs and
+                                artisans. Share
+                                inspiration, discover new creations, and grow your craft with Lucerne.
+                            </div>
+
+                            <a href="#" class="btn-custom mt-1">Sign Up</a>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer-section">
+
+    <div class="container">
+
+        <div class="top-logo-white d-flex justify-content-center ">
+            <img src="assets/img/logo-white.png" alt="">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <h5 class="headers">NEWSLETTER</h5>
+                <p class="desc-text">
+                    Join our artisan & chef community for industry news, innovations, and learning. Spam-free: change
+                    your mailing preferences anytime.
+                </p>
+                <button class="btn-custom sm-btn">
+                    Join our community today
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <div class="login-area">
+                    <div class="big-text">Account & settings</div>
+
+                    <a href="#" class="login-link">
+                        <i class="fa-regular fa-circle-user me-2"></i> Login
+                    </a>
+                    <a href="#" class="login-link">
+                        <i class="fa-solid fa-user-plus me-1"></i> Sign up now
+                    </a>
+
+                    <div class="dropdown mt-2">
+                        <a class="dropdown-toggle dropdown-style" href="#" role="button" data-bs-toggle="dropdown">
+                            International - English
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">International - English</a></li>
+                            <li><a class="dropdown-item" href="#">Français</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5 class="headers-2">IMPORTANT LINKS</h5>
+                <ul class="links-list">
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Trends & Inspiration</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5 class="headers-2">PRODUCTS</h5>
+                <ul class="links-list">
+                    <li><a href="#">Chocolate</a></li>
+                    <li><a href="#">Cocoa Ingredients</a></li>
+                    <li><a href="#">Nut Ingredients</a></li>
+                    <li><a href="#">Coatings & fillings</a></li>
+                    <li><a href="#">Inclusions</a></li>
+                    <li><a href="#">Decorations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-2 mb-4">
+                <h5 class="headers-2">ACADEMY</h5>
+                <ul class="links-list">
+                    <li><a href="#">About Academy</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Our Chefs</a></li>
+                    <li><a href="#">Our Locations</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div class="container">
+            <div class="d-flex copyright flex-wrap justify-content-end align-items-center">
+                <div>
+                    Copyrights © 2025 by <strong>Lucerne Cocoa and Chocolate Products Limited</strong>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
