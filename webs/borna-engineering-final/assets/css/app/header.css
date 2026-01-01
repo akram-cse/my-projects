@@ -1,0 +1,111 @@
+header {
+    margin: 1rem;
+}
+
+
+.social-lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: start;
+    gap: 15px;
+    padding: 0;
+}
+
+.social-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0;
+}
+
+.topbar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 5px;
+}
+
+.top-link {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+
+.nav-link {
+     font-family: 'space';
+}
+.phone svg, .mail svg, .time svg {
+
+    color: #ba9964;
+    padding-right: 5px;
+}
+
+.topbar-lists {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: end;
+    gap: 30px
+}
+
+.navbar-float {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.brand-logo {
+    width: 100px;
+}
+
+.btn-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #b6b6b6;
+    color: #746a62;
+    margin-right: 15px;
+
+}
+
+
+.contact-btn {
+    padding: 13px 20px;
+    margin-right: 29px;
+    border: 1px solid #b6b6b6;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    font-family: "space";
+}
+
+
+.right-arrow {
+    padding: 13px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 12%;
+    z-index: 100;
+    background: #ba9964;
+    color: white;
+}
