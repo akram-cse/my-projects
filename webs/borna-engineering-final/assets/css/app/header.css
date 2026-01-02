@@ -109,3 +109,12 @@ header {
     background: #ba9964;
     color: white;
 }
+
+@media (max-width: 991px) {
+   .social-link, .top-link {
+        font-size: 13px;
+   }
+    .contact-btn {
+        font-size:
+    }
+}
