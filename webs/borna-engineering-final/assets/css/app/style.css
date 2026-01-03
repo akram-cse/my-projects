@@ -5,6 +5,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "roboto";
+    src: url("../../font/roboto.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
 
 .swiper {
     width: 100%;
