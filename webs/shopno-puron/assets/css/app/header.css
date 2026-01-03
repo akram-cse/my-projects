@@ -73,13 +73,14 @@
     z-index: 100;
 }
 
-.navbar {
-    padding: 15px 0;
-}
+
 
 .brand-logo {
-    width: 70px;
+    width: 90px;
+    padding-left: 10px;
 }
+
+
 
 .btn-search {
     display: flex;
@@ -146,10 +147,31 @@
 
 @media (max-width: 991px) {
     .social-link, .top-link {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .contact-btn {
-        font-size: 14px;
+        font-size: 13px;
     }
+
+    .right-arrow {
+        right: 7px;
+    }
+
+    .btn-group:hover .right-arrow {
+        right: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+     .navbar-float {
+         margin-top: -40px;
+     }
+
+
 }
