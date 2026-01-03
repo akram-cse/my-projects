@@ -1,0 +1,149 @@
+/* --- FONTS --- */
+@font-face {
+    font-family: "Bricolage";
+    src: url("../../font/Bricolage.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM";
+    src: url("../../font/DM.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- RESET & DEFAULTS --- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM';
+}
+
+/* --- SHARED TYPOGRAPHY --- */
+.headline {
+    color: #062F15;
+    font-size: 48px;
+    font-family: 'Bricolage';
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.sub-title {
+    color: #F4CE52;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.label-text {
+    color: #107534;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* --- SHARED COMPONENTS --- */
+.leaaf i {
+    color: #ebdc5e;
+}
+
+.discover-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+    margin-top: 15px;
+    align-items: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.discover-link:hover {
+    text-decoration: underline;
+}
+
+.margin-divider {
+    margin: 80px 0;
+}
+
+.marginn {
+    margin-top: 80px;
+}
+
+/* --- SHARED BUTTONS --- */
+.agro-btn-gold {
+    background-color: #ebdc5e;
+    color: #09431e;
+    padding: 25px 44px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.agro-btn-gold i {
+    color: #09431e;
+}
+
+.agro-btn-gold:hover i {
+    color: white;
+}
+
+.agro-btn-white {
+    background-color: #ebdc5e;
+    color: #09431e;
+    padding: 25px 44px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.agro-btn-white:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.agro-btn-outline {
+    background-color: transparent;
+    color: #09431e;
+    border: 2px solid #000000;
+    padding: 28px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.agro-btn-outline:hover {
+    border-color: #09431e;
+    background-color: #09431e;
+    color: white;
+}
+
+/* --- BACK TO TOP BUTTON --- */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#btn-back-to-top:hover {
+    background-color: #146c43;
+    transform: translateY(-3px);
+}

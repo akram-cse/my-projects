@@ -1,0 +1,43 @@
+.footer-section { background: #062F15; }
+
+.footer-layout {
+    background-image: url(../../img/Grainy-BG.png);
+    background-position: bottom right; background-repeat: no-repeat;
+    background-size: contain; background-attachment: scroll; position: relative;
+}
+
+.footer-layout::before {
+    content: ""; display: block; height: 100%; width: 100%;
+    bottom: 0; left: 0; background-image: url(../../img/bg-before.png);
+    background-position: bottom left; background-repeat: no-repeat;
+    background-size: auto; position: absolute;
+}
+
+.my-footer { background-color: #0b2e1b; color: #ffffff; padding: 60px 0; }
+.footer-title { color: white; font-size: 20px; margin-bottom: 18px; }
+
+.arrow-link {
+    display: flex; align-items: center; text-decoration: none;
+    color: #ffffff; transition: color 0.3s ease; margin-bottom: 5px;
+    font-size: 14px; width: max-content;
+}
+
+.arrow-link i {
+    color: #f4d03f; max-width: 0; opacity: 0;
+    transform: translateX(-10px); overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.arrow-link:hover { color: #f4d03f; }
+.arrow-link:hover i {
+    max-width: 20px; opacity: 1; transform: translateX(0); margin-right: 8px;
+}
+
+.social-box {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 35px; height: 35px; background-color: rgba(255, 255, 255, 0.1);
+    color: white; border-radius: 4px; margin-right: 5px;
+    text-decoration: none; transition: 0.3s;
+}
+
+.social-box:hover { background-color: #f4d03f; color: #0b2e1b; }
