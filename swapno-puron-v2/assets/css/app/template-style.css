@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "space";
+    src: url("../../fonts/space-gotesk.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("../../fonts/roboto.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --primaryColor: #0072bf;
+    --primaryHover: #004E82;
+    --secColor: #ef5925;
+    --secHoverColor: #D94A1F;
+    --dark-orange: #C7431C;
+    --main-brown: #3d2b1f;
+    --accent-gold: #b58e58;
+    --titleColor: #1d1d1f;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-image {
+    object-fit: cover;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(1, 8, 31, 0.19);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.py-section {
+    padding: 80px 0;
+}
+
+
+.ihbox-imgbox-wrapper {
+    border: 2px solid #6c757d;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.ihbox-imgbox {
+    text-align: center;
+    border: 1px solid #eb5d25;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    z-index: 2;
+}
+
+.ihbox-imgbox img {
+    height: 80%;
+    width: auto;
+    transform: perspective(100px) rotateY(-3deg);
+    border-radius: 15px;
+    transition: .9s;
+}
+
+.element-title {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.ihbox-imgbox img {
+    transform: perspective(100px) rotateY(-3deg);
+    border-radius: 15px;
+    transition: .9s;
+}
+
+
+.ihbox-imgbox:hover img {
+    transform: rotateY(10deg) !important;
+    cursor: crosshair;
+}
+
+
+.magnetic-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.single-banner {
+    width: 320px;
+    height: 126px;
+    background-color: #fff;
+    border: 8px solid #ee5925;
+    box-shadow: 1px 1px 5px #95aba7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 20px;
+}
+
+
+.banner-img-wrap {
+    position: relative;
+}
+
+.single-banner:hover {
+    box-shadow: 1px 1px 15px #95aba7;
+}
+
+
+.single-banner p {
+    color: #333;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.single-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.dhaka {
+    top: 0px;
+    left: -275px;
+}
+
+.chittagong {
+    top: 150px;
+    left: -335px;
+}
+
+.rajshahi {
+    top: 300px;
+    left: -335px;
+}
+
+.sylhet {
+
+    top: 450px;
+    left: -275px;
+}
+
+.barisal {
+    top: 0px;
+    left: 530px;
+}
+
+.khulna {
+    top: 150px;
+    left: 585px;
+}
+
+.mymenshing {
+    top: 300px;
+    left: 585px;
+}
+
+.rangpur {
+    top: 450px;
+    left: 530px;
+}
+
+
+.link-transparent {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon img {
+    margin-top: 4px;
+    padding: 10px;
+    width: 100px;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.icon {
+    height: 100%;
+}
+
+.division {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.section-bg {
+    background-image: url('../../img/section-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.section-bg::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgba(237, 89, 37, 0.25);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.magnetic-wrap {
+    position: relative;
+    z-index: 100;
+}

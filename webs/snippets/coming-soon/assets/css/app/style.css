@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "space";
+    src: url("../../font/space-gotesk.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+.bgimg {
+    background-image: url('../../img/hero.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+
+}
+
+.bgimg::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.73);
+    z-index: 1;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    z-index: 2;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 50px;
+    left: 63px;
+    z-index: 2;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    font-weight: 600;
+    font-family: "space";
+
+}
+
+.main-text {
+    font-size: 42px !important;
+}
+
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.brand-logo {
+    width: 160px;
+}
+
+.brand-logo img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px
+}
+
+.brand-name {
+    font-size: 16px;
+    font-family: "space";
+}
+
+.top-link {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "space";
+}
+
+.phone svg, .mail svg {
+
+    color: #ef5926;
+    padding-right: 5px;
+}
