@@ -364,26 +364,127 @@
 
 
 <section class="bg-section py-5">
-  <div class="container-fluid px-md-5">
-    <div class="row align-items-center">
+    <div class="container-fluid px-md-5">
+        <div class="row align-items-center">
 
-      <div class="col-lg-4 text-white mb-5 mb-lg-0">
-        <div class="since-text mb-2">SINCE 1986</div>
-        <h2 class="section-title fw-bold mb-4">Different case,<br>need different services.</h2>
-        <p class="opacity-75 mb-4">Lorem ipsum dolor sit amet consectetur elit venenatis dolor sit amet.</p>
+            <div class="col-lg-4 text-white mb-5 mb-lg-0">
+                <div class="since-text mb-2">SINCE 1986</div>
+                <h2 class="section-title fw-bold mb-4">Different case,<br>need different services.</h2>
+                <p class="opacity-75 mb-4">Lorem ipsum dolor sit amet consectetur elit venenatis dolor sit amet.</p>
 
-        <div class="d-flex gap-3">
-          <div class="nav-btn prev-btn"> &larr; </div>
-          <div class="nav-btn next-btn active"> &rarr; </div>
+                <div class="d-flex gap-3">
+                    <div class="nav-btn prev-btn"> &larr;</div>
+                    <div class="nav-btn next-btn active"> &rarr;</div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+
+
+                <div class="swiper newSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide new-slide-item">
+                            <div class="single-service">
+                                <div class="service-post-item">
+                                    <div class="service-img-wrapper">
+                                        <img src="assets/img/service-01.jpg" alt="service-img">
+                                    </div>
+                                    <div class="service-content">
+                                        <div class="service-title">
+                                            Transforming Rooms
+                                        </div>
+                                        <p class="service-description">
+                                            The interior professional worker’s available in the xinterio
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-service">
+                                <div class="service-post-item">
+                                    <div class="service-img-wrapper">
+                                        <img src="assets/img/service-01.jpg" alt="service-img">
+                                    </div>
+                                    <div class="service-content">
+                                        <div class="service-title">
+                                            Transforming Rooms
+                                        </div>
+                                        <p class="service-description">
+                                            The interior professional worker’s available in the xinterio
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-service">
+                                <div class="service-post-item">
+                                    <div class="service-img-wrapper">
+                                        <img src="assets/img/service-01.jpg" alt="service-img">
+                                    </div>
+                                    <div class="service-content">
+                                        <div class="service-title">
+                                            Transforming Rooms
+                                        </div>
+                                        <p class="service-description">
+                                            The interior professional worker’s available in the xinterio
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-service">
+                                <div class="service-post-item">
+                                    <div class="service-img-wrapper">
+                                        <img src="assets/img/service-01.jpg" alt="service-img">
+                                    </div>
+                                    <div class="service-content">
+                                        <div class="service-title">
+                                            Transforming Rooms
+                                        </div>
+                                        <p class="service-description">
+                                            The interior professional worker’s available in the xinterio
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="bottom-link">
+                                    <a href="#">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+            </div>
+
         </div>
-      </div>
-
-      <div class="col-lg-8">
-
-      </div>
-
     </div>
-  </div>
 </section>
 
 
@@ -528,7 +629,6 @@
 <!--==========   Why Us End   ============-->
 
 
-
 <!-- Footer -->
 
 <footer>
@@ -648,10 +748,10 @@
 <script>
     var swiper = new Swiper(".mySwiper", {
         loop: true,
-        // autoplay: {
-        //     delay: 4000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         grabCursor: true,
         pagination: {
             el: ".swiper-pagination",
@@ -660,6 +760,17 @@
 
     });
 </script>
+
+ <script>
+    var swiper = new Swiper(".newSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 
 </body>
