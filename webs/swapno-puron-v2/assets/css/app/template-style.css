@@ -110,7 +110,6 @@
 
 .ihbox-imgbox:hover img {
     transform: rotateY(10deg) !important;
-    cursor: crosshair;
 }
 
 
@@ -128,6 +127,7 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 20px;
+    transition: all 0.5s ease;
 }
 
 
@@ -137,6 +137,8 @@
 
 .single-banner:hover {
     box-shadow: 1px 1px 15px #95aba7;
+     border: 8px solid var(--primaryColor);
+    transform: translateY(-10px);
 }
 
 
@@ -244,4 +246,51 @@
 .magnetic-wrap {
     position: relative;
     z-index: 100;
+}
+
+.banner-img {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.banner-right {
+    position: relative
+}
+
+.bg-img {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.banner-text {
+    height: 100%;
+    z-index: 100;
+    padding: 60px 50px;
+}
+
+.since {
+    color: var(--primaryColor);
+    font-family: space;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.banner-title {
+    color: #403226;
+    font-family: space;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.banner-desc {
+    color: #403226;
+    font-family: space;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 500;
 }
