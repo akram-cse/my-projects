@@ -1,0 +1,125 @@
+.primary-menu {
+    position: relative;
+    padding: 0;
+}
+
+.hover-nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    margin-bottom: 0;
+    height: 45px;
+    padding-left: 0;
+}
+
+.nav-menu-item {
+    position: relative;
+    border-left: 1px solid rgba(140, 191, 241, 0.2);
+}
+
+.nav-menu-item:hover {
+    background-color: #f5f2f2;
+}
+
+.nav-menu-item:first-child {
+    border-left: 0 !important;
+}
+
+.nav-menu-item > a {
+    padding: 0 12px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #111;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+}
+
+.nav-menu-item .sub-menu-indicator {
+    font-size: .75rem;
+    margin: 0 0 0 .375rem !important;
+}
+
+.sub-menu-items {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    list-style: none;
+    z-index: -1;
+    line-height: 1.5;
+    background: #fff;
+    border-radius: 0;
+    top: 100%;
+    left: -1px;
+    min-width: 12rem;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+    border: 1px solid #0000001a;
+    border-top: 3px solid #d77c21;
+    box-shadow: 0 13px 42px 11px rgba(0, 0, 0, .05);
+    transition: opacity .25s ease, margin .2s ease;
+}
+
+
+.sub-menu-items .nav-menu-item > a, .mega-menu-content .nav-menu-item > a {
+    color: #495057
+}
+
+.sub-menu-items .nav-menu-item:hover {
+    background-color: #e0e9ef;
+}
+
+.sub-menu-items .sub-menu-items {
+    left: 100%;
+    top: 0;
+}
+
+.hover-nav-menu:not(.on-click) .nav-menu-item:hover > .sub-menu-items {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+    pointer-events: auto;
+    z-index: 499;
+}
+
+.sub-menu-items .nav-menu-item:not(:first-child) {
+    border-top: 1px solid #0000001a;
+    border-left: 0 !important;
+}
+
+.sub-menu-items .nav-menu-item > a {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.sub-menu-items .sub-menu-indicator,
+.mega-menu-content .sub-menu-indicator {
+    display: inline;
+    position: absolute;
+    top: 36%;
+    right: 8px;
+    line-height: 1;
+    margin: 0;
+}
+
+
+@media (max-width: 991px) {
+    .hover-nav-menu {
+        display: block;
+        border-bottom: none;
+    }
+
+    .hover-nav-menu {
+        height: auto;
+        padding-left: 0;
+    }
+}
