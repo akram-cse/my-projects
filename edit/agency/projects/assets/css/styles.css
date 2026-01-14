@@ -1,0 +1,96 @@
+.py-section {
+    padding: 100px 0;
+}
+
+.projects .single-project {
+    cursor: pointer;
+    position: relative;
+}
+
+.projects .overlay-box {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    right: 18px;
+    bottom: 18px;
+    color: #ffffff;
+    text-align: center;
+    transition: all 900ms ease;
+    opacity: 0;
+    outline: 2px solid #ffffff;
+    outline-offset: -20px;
+    background-image: linear-gradient(to top, #F7941D 0%, #febe09 100%);
+}
+
+.projects .overlay-box .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    height: 100%;
+    position: relative;
+
+}
+
+.projects .single-project:hover .overlay-box {
+    opacity: 0.75;
+}
+
+.single-project img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.p-relative {
+    position: relative;
+}
+
+.section-center-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+}
+
+.separator-section {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.separator-square {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 3px solid #281459;
+    display: inline-block;
+}
+
+.separator-left {
+    position: absolute;
+    top: 50%;
+    width: 90px;
+    margin-top: -1px;
+    left: -100px;
+    height: 3px;
+    background-color: #df3a3c;
+}
+
+.separator-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    width: 90px;
+    right: -100px;
+    height: 3px;
+    background-color: #df3a3c;
+}
+
+.link-transparent {
+    color: #2f3133;
+    text-decoration: none;
+}

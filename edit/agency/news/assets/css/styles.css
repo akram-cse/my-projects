@@ -1,0 +1,65 @@
+.stats .stats-item svg {
+    font-size: 44px;
+    color: #e03a3c;
+    line-height: 0;
+    margin-right: 15px;
+}
+
+
+.stats .stats-item .counter {
+    color: #151515;
+    font-size: 30px;
+    display: block;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.stats .stats-item p {
+    color: color-mix(in srgb, #444444, transparent 40%);
+    padding: 5px 0 0 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.bg-img-right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../assets/img/bg-right.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.py-section {
+    padding: 100px 0;
+}
+
+.p-relative {
+    position: relative;
+}
+.img-inner-column{
+    position: relative;
+    padding-left: 70px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-right: 40px;
+}
+
+.img-inner-column:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 335px;
+    height: 96%;
+    background-color: #df3a3c;
+    border-radius: 0 100px 0 0;
+}
+
+.img-inner-column img{
+    position: relative;
+    height: 450px;
+}

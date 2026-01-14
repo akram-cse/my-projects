@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    .heading-top {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .heading-top .heading-left {
+        width: 100%;
+        flex-shrink: 0;
+    }
+}

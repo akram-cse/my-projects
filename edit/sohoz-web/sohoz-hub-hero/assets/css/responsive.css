@@ -1,0 +1,164 @@
+@media (max-width: 1600px) {
+
+    .section-hero {
+        height: 720px;
+        min-height: 100vh;
+        padding-top: 230px;
+        padding-bottom: 100px;
+    }
+
+    .motto {
+        font-size: 14px;
+    }
+
+    .single-banner {
+        padding: 10px 10px;
+    }
+
+    .imgbox {
+        text-align: center;
+        border: 1px solid #405dd2;
+        background-image: radial-gradient(#0d2896, #061056 15%, #020a31 80%, #02093d);
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #133308;
+    }
+
+    .imgbox h2 {
+        font-size: 24px;
+    }
+
+    .center-logo {
+        height: 60px;
+        width: auto;
+    }
+
+    .icon img {
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .ems {
+        top: -80px;
+        left: -350px;
+    }
+
+    .web {
+        top: 80px;
+        left: -400px;
+    }
+
+    .hrm {
+        top: auto;
+        left: -320px;
+        bottom: -100px;
+    }
+
+
+    .pos {
+        top: -80px;
+        left: auto;
+        right: -350px;
+    }
+
+    .health {
+        top: 80px;
+        right: -400px;
+        left: auto;
+    }
+
+    .cloud {
+        top: auto;
+        right: -350px;
+        left: auto;
+        bottom: -100px;
+    }
+
+    .section-hero-extra {
+        margin: -100px 0 0;
+        z-index: 500;
+        padding-bottom: 20px;
+        position: relative;
+        background-color: #040e32;
+    }
+
+    .sohoz-item h2 {
+        font-size: 20px !important;
+        margin-bottom: 0;
+        font-family: "space ", sans-serif;
+    }
+
+}
+
+
+@media (max-width: 1400px) {
+
+    .section-hero {
+        height: 650px;
+        min-height: 100vh;
+
+    }
+
+    .name {
+        font-size: 18px !important;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-family: "space ", sans-serif;
+    }
+
+    .section-hero-extra {
+        padding: 20px 0;
+        margin: 0 0 0;
+        z-index: 500;
+        position: relative;
+        background-color: #040e32;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .feature-card {
+        height: 100%;
+    }
+
+    .imgbox-wrapper {
+        box-shadow: none;
+        width: fit-content;
+        border-radius: 50%;
+        padding: 5px;
+        background-color: transparent;
+        z-index: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imgbox {
+        justify-content: center;
+        box-shadow: 1px 1px 15px #3041b2;
+    }
+
+    .single-banner {
+        position: static;
+        width: 280px;
+    }
+
+    .section-hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 150px;
+        padding-bottom: 0;
+        z-index: 10;
+    }
+
+}

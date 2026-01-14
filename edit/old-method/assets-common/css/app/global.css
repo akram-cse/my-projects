@@ -1,0 +1,271 @@
+:root {
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-orange-500: oklch(70.5% .213 47.604);
+    --color-yellow-500: oklch(79.5% .184 86.047);
+    --color-green-500: oklch(72.3% .219 149.579);
+    --color-blue-500: oklch(62.3% .214 259.815);
+    --color-purple-500: oklch(62.7% .265 303.9);
+    --color-zinc-400: oklch(70.5% .015 286.067);
+    --color-zinc-600: oklch(44.2% .017 285.786);
+    --color-zinc-900: oklch(21% .006 285.885);
+    --color-black: #000;
+    --whiteColor: #fff;
+    --color-white: #fff;
+    --spacing: .25rem;
+    --container-sm: 24rem;
+    --container-4xl: 56rem;
+    --container-6xl: 72rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: 1rem;
+    --text-sm: .875rem;
+    --text-sm--line-height: 1.25rem;
+    --text-base: 1rem;
+    --text-base--line-height: 1.5rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: 1.75rem;
+    --text-xl: 1.25rem;
+    --text-xl--line-height: 1.75rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: 1.33333;
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: 2.25rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 450;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 550;
+    --font-weight-extrabold: 650;
+    --font-weight-black: 750;
+    --tracking-wide: .025em;
+    --tracking-wider: .05em;
+    --tracking-widest: .1em;
+    --leading-snug: 1.375;
+    --leading-relaxed: 1.625;
+    --radius-md: .375rem;
+    --radius-lg: .5rem;
+    --radius-xl: .75rem;
+    --radius-2xl: 1rem;
+    --ease-in: cubic-bezier(.4, 0, 1, 1);
+    --ease-out: cubic-bezier(0, 0, .2, 1);
+    --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+    --default-transition-duration: .15s;
+    --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    --default-mono-font-family: var(--font-mono);
+    --gutter: 1rem;
+    --margin: 1rem;
+    --font-size-button-lg: 1rem;
+    --letter-spacing-button-lg: 0;
+    --line-height-button-lg: 1.5rem;
+    --font-size-button-sm: 1rem;
+    --letter-spacing-button-sm: 0;
+    --line-height-button-sm: 1.5rem;
+    --font-size-t8: .875rem;
+    --font-weight-t8: 450;
+    --line-height-t8: 1.1375rem;
+    --letter-spacing-t8: 0;
+    --font-size-t7: 1rem;
+    --font-weight-t7: 450;
+    --line-height-t7: 1.3rem;
+    --letter-spacing-t7: -.05em;
+    --font-size-t6: 1.125rem;
+    --font-weight-t6: 420;
+    --line-height-t6: 1.4625rem;
+    --letter-spacing-t6: 0;
+    --font-size-t5: 1.375rem;
+    --font-weight-t5: 400;
+    --line-height-t5: 1.625rem;
+    --letter-spacing-t5: -.005em;
+    --font-size-t4: 1.625rem;
+    --font-weight-t4: 330;
+    --line-height-t4: 1.8525rem;
+    --letter-spacing-t4: 0;
+    --font-size-t3: 1.875rem;
+    --font-weight-t3: 330;
+    --line-height-t3: 2.1375rem;
+    --letter-spacing-t3: 0;
+    --font-size-t2: 2.25rem;
+    --font-weight-t2: 330;
+    --line-height-t2: 2.52rem;
+    --letter-spacing-t2: 0;
+    --font-size-t1: 2.75rem;
+    --font-weight-t1: 330;
+    --line-height-t1: 2.97rem;
+    --letter-spacing-t1: -.005em;
+    --font-size-dsp: 3.5rem;
+    --font-weight-dsp: 330;
+    --line-height-dsp: 3.78rem;
+    --letter-spacing-dsp: -.01em;
+    --font-size-body-lg: 1.125rem;
+    --line-height-body-lg: 1.575rem;
+    --font-weight-body-lg: 400;
+    --letter-spacing-body-lg: 0;
+    --font-size-body-base: 1rem;
+    --line-height-body-base: 1.4rem;
+    --font-weight-body-base: 420;
+    --letter-spacing-body-base: -.006em;
+    --font-size-body-sm: .875rem;
+    --line-height-body-sm: 1.1375rem;
+    --font-weight-body-sm: 420;
+    --letter-spacing-body-sm: 0;
+    --space-xs: .25rem;
+    --space-sm: .5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 2.5rem;
+    --space-3xl: 4rem;
+    --space-4xl: 5rem;
+    --space-5xl: 8rem;
+    --header-height: 4.5rem;
+    --hero-top: var(--header-height);
+    --color-shade-05: #fafafa;
+    --color-shade-10: #f4f4f5;
+    --color-shade-20: #e4e4e7;
+    --color-shade-30: #d4d4d8;
+    --color-shade-40: #a1a1aa;
+    --color-shade-50: #71717a;
+    --color-shade-60: #52525b;
+    --color-shade-70: #3f3f46;
+    --color-shade-90: #18181b;
+    --color-shade-95: #0e0e10;
+    --color-shade-100: #000;
+    --color-rich-black: #02090a;
+    --color-link-dark: #9797a2;
+    --color-link-dark-hover: #d4d4d8;
+    --color-link-dark-active: #a1a1aa;
+    --color-link-dark-focus: #fff;
+    --color-link-dark-disabled: #71717a;
+    --color-pistachio-10: #d4f9e0;
+    --color-aloe-10: #c1fbd4;
+    --font-neuehaas: NeueHaasGrotesk, Helvetica, Arial, sans-serif;
+    --font-bangla: SolaimanLipi, Arial, sans-serif;
+
+    --grid__devMode-4: repeating-linear-gradient(90deg, #0000 -1rem, #0000 0%, #ff450033 0, #ff450033 calc(25% - .75rem));
+    --grid__devMode-8: repeating-linear-gradient(90deg, #0000 -1rem, #0000 0%, #ff450033 0, #ff450033 calc(12.5% - .875rem));
+    --grid__devMode-12-md: repeating-linear-gradient(90deg, #0000 -1rem, #0000 0%, #ff450033 0, #ff450033 calc(8.3% - .9rem));
+    --grid__devMode-12-lg: repeating-linear-gradient(90deg, #0000 -1.5rem, #0000 0%, #ff450033 0, #ff450033 calc(8.3% - 1.35rem));
+}
+
+@media (min-width: 900px) {
+    :root {
+        --font-size-button-lg: 1.125rem;
+        --line-height-button-lg: 1.75rem;
+        --font-size-b6: .875rem;
+        --line-height-b6: 1.3rem;
+        --letter-spacing-b6: .02em;
+        --font-size-b5: 1rem;
+        --line-height-b5: 1.5rem;
+        --letter-spacing-b5: .015em;
+        --font-size-b4: 1.125rem;
+        --line-height-b4: 1.41rem;
+        --letter-spacing-b4: .04em;
+        --font-size-b3: 1.25rem;
+        --line-height-b3: 1.75rem;
+        --letter-spacing-b3: .015em;
+        --font-size-b2: 1.5rem;
+        --line-height-b2: 1.71rem;
+        --letter-spacing-b2: .015em;
+        --font-size-b1: 1.75rem;
+        --line-height-b1: 2.24rem;
+        --letter-spacing-b1: .015em;
+        --font-size-t7: 1.25rem;
+        --line-height-t7: 1.75rem;
+        --letter-spacing-t7: .015em;
+        --font-weight-t7: 400;
+        --font-size-t6: 1.5rem;
+        --line-height-t6: 1.8rem;
+        --letter-spacing-t6: .01em;
+        --font-size-t5: 2rem;
+        --line-height-t5: 2.28rem;
+        --letter-spacing-t5: .01em;
+        --font-size-t4: 3rem;
+        --line-height-t4: 3.42rem;
+        --letter-spacing-t4: 0;
+        --font-size-t3: 3.4375rem;
+        --line-height-t3: 4rem;
+        --letter-spacing-t3: 0;
+        --font-size-t2: 4.375rem;
+        --line-height-t2: 4.375rem;
+        --letter-spacing-t2: 0;
+        --font-size-t1: 6rem;
+        --line-height-t1: 5.75rem;
+        --letter-spacing-t1: 0;
+        --font-size-dsp: var(--font-size-t1);
+        --line-height-dsp: var(--font-size-t1);
+        --letter-spacing-dsp: var(--letter-spacing-t1);
+        --font-size-body-sm: var(--font-size-b4);
+        --line-height-body-sm: var(--line-height-b4);
+        --letter-spacing-body-sm: var(--letter-spacing-b4);
+        --font-size-body-base: var(--font-size-b2);
+        --line-height-body-base: var(--line-height-b2);
+        --letter-spacing-body-base: var(--letter-spacing-b2);
+        --font-size-body-lg: var(--font-size-b1);
+        --line-height-body-lg: var(--line-height-b1);
+        --letter-spacing-body-lg: var(--letter-spacing-b1);
+        --space-xs: .5rem;
+        --space-sm: 1rem;
+        --space-md: 1.5rem;
+        --space-lg: 2rem;
+        --space-xl: 2.5rem;
+        --space-2xl: 4rem;
+        --space-3xl: 5rem;
+        --space-4xl: 8rem;
+        --space-5xl: 10rem;
+        --hero-top: calc(var(--header-height));
+    }
+}
+
+
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: 100%;
+    src: url("../../font/arial-mdm.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../../font/helvetica.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueHaasGrotesk";
+    src: url("../../font/neuehaasgrotdisp-medium.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueHaasGrotesk";
+    src: url("../../font/neuehaasgrotdisp-light.otf") format("truetype");
+    font-weight: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueHaasGrotesk";
+    src: url("../../font/neuehaasgrotdisp-bold.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NeueHaasGrotesk";
+    src: url("../../font/neuehaasgrottextround-italic.otf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "space";
+    src: url("../../font/space-gotesk.ttf") format("truetype");
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    background: #07000c;
+}

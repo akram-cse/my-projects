@@ -1,0 +1,246 @@
+
+.section-hero {
+    height: 920px;
+    min-height: 100vh;
+    padding-top: 280px;
+    padding-bottom: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.magnetic-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-bg-image {
+    background-image: url("../../assets/img/bg-hero.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.hero-bg-image:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    content: '';
+    background: rgba(4, 14, 45, 0.82);
+}
+
+.imgbox-wrapper {
+    box-shadow: 1px 1px 15px #3041b2;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #0d2896;
+    z-index: 500;
+}
+
+.imgbox {
+    text-align: center;
+    font-family: 'space', sans-serif;
+    border: 1px solid #405dd2;
+    background-image: radial-gradient(#0d2896, #061056 15%, #020a31 80%, #02093d);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #133308;
+}
+
+.imgbox h2 {
+    font-weight: 700;
+}
+
+.imgbox img {
+    transform: perspective(100px) rotateY(-3deg);
+    border-radius: 15px;
+    transition: .9s;
+    z-index: 5000;
+}
+
+.imgbox:hover img {
+    transform: rotateY(10deg) !important;
+}
+
+.banner-img-wrap {
+    position: relative;
+}
+
+.single-banner {
+    width: 350px;
+    background-image: radial-gradient(#0d2896, #061056 15%, #020a31 80%, #02093d);
+    box-shadow: 1px 1px 15px #3041b2;
+    padding: 15px 10px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.single-banner:hover {
+    box-shadow: 1px 1px 15px #1d2c91;
+}
+
+.center-logo {
+    height: 100px;
+    width: auto;
+}
+
+.motto {
+    color: #fff;
+    line-height: 1.45;
+    font-size: 18px;
+}
+
+.ems {
+    top: -120px;
+    left: -340px;
+}
+
+.link-transparent {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.single-banner .link-transparent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    display: flex;
+}
+
+.icon {
+    height: 100%;
+}
+
+.icon img {
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+.sohoz-item {
+    color: #f0f1f3;
+    font-family: 'space', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.sohoz-item h2 {
+    font-size: 22px !important;
+    margin-bottom: 5px;
+    font-family: var(--font-neuehaas);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.text-sub {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.text-link {
+    font-size: 11px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.web {
+    top: 100px;
+    left: -400px;
+}
+
+.hrm {
+    top: auto;
+    left: -320px;
+    bottom: -140px;
+}
+
+
+.pos {
+    top: -120px;
+    left: auto;
+    right: -340px;
+}
+
+.health {
+    top: 100px;
+    right: -400px;
+    left: auto;
+}
+
+.cloud {
+    top: auto;
+    right: -320px;
+    left: auto;
+    bottom: -140px;
+}
+
+.section-hero-extra {
+    margin: -120px 0 0;
+    padding-bottom: 50px;
+    z-index: 1;
+    position: relative;
+    background-color: #030c32;
+}
+
+.feature-card {
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 15px #3041b2;
+    border-radius: 20px;
+    background-image: radial-gradient(#030a25, #061056 15%, #020a31 80%, #02093d);
+    z-index: 1500;
+    display: block;
+}
+
+.feature-card:hover {
+    box-shadow: 1px 1px 15px #1d2c91;
+}
+
+.feature-card-inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-card-inner .logo img {
+    width: 60px;
+    height: auto;
+}
+
+.card-details {
+    color: #fff;
+}
+
+
+.name {
+    font-size: 20px !important;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-family: "space ", sans-serif;
+}
+
+.url {
+    font-size: 13px;
+    font-weight: 500;
+}

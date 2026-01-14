@@ -1,0 +1,64 @@
+.featured-services .service-item {
+    background-color: #fff;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.featured-services .service-item:before {
+    content: "";
+    position: absolute;
+    background: #de3a3c;
+    inset: 100% 0 0 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.featured-services .service-item:hover:before {
+    background: #de3a3c;
+    inset: 0;
+    border-radius: 0;
+}
+
+.featured-services .service-item .icon {
+    margin-bottom: 10px;
+}
+
+.featured-services .service-item a {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #de3a3c;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.featured-services .service-item p {
+    margin-top: 16px;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+    transition: ease-in-out 0.3s;
+}
+
+.featured-services .service-item .icon {
+    color: #de3a3c;
+    font-size: 36px;
+    transition: ease-in-out 0.3s;
+}
+
+.featured-services .service-item:hover a, .featured-services .service-item:hover .icon, .featured-services .service-item:hover p {
+    color: #fff;
+}

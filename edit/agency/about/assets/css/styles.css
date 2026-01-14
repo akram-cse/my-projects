@@ -1,0 +1,77 @@
+.section-bg {
+    background-color: transparent;
+    padding: 160px 0;
+    position: relative;
+}
+
+.section-bg:before {
+    content: "";
+    background-color: #1b1b1b;
+    position: absolute;
+    bottom: 60px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+}
+
+.p-relative {
+    position: relative;
+}
+
+.about .content p {
+    margin: 20px 0;
+}
+
+.about .content .about-btn {
+    padding: 8px 30px 9px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #e03a3c;
+}
+
+.about .content .about-btn:hover {
+    background: #e03a3c;
+    color: #fff;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.about .icon-box {
+    color: #fff;
+}
+
+.about .icon-box svg {
+    font-size: 40px;
+    color: #e03a3c;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about .icon-box a {
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.about .icon-box:hover a {
+    color: #e03a3c;
+}
+
+.about .icon-box p {
+    font-size: 15px;
+    color: color-mix(in srgb, #fff, transparent 40%);
+    margin-bottom: 0;
+}
+

@@ -1,0 +1,51 @@
+@media (max-width: 991px) {
+    .hover-nav-menu {
+        display: block;
+        border-bottom: none;
+        height: auto;
+        padding-left: 0px;
+    }
+
+
+    .nav-menu-item {
+        border-left: 0 !important;
+        border-top: 1px solid #e0dddd;
+    }
+
+    .nav-menu-item:first-child {
+        border-top: 0 !important;
+    }
+
+    .navbar .container {
+        display: block;
+    }
+
+    .mega-menu .mega-menu-content {
+        width: 100%;
+    }
+
+    .mega-menu {
+        position: relative;
+    }
+
+    .mega-menu-content .list-group {
+        width: 100%;
+    }
+
+    .primary-menu {
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+    }
+
+    .sub-menu-items .sub-menu-items {
+        left: 0;
+        top: 100%;
+    }
+
+    .logo-text .text-h1 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,74 @@
+.image-demo-section {
+    padding-top: 80px;
+}
+
+.heading-top{
+    margin-bottom: 50px;
+}
+
+.heading-left p {
+    color: #30deee;
+    text-transform: none;
+    --tw-font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-t7);
+    font-weight: var(--tw-font-weight, var(--font-weight-t7));
+    letter-spacing: var(--letter-spacing-t7);
+    line-height: var(--line-height-t7);
+}
+
+.text-big-heading {
+    font-size: var(--font-size-t2);
+    font-weight: var(--font-weight-t2);
+    letter-spacing: var(--letter-spacing-t2);
+    line-height: var(--line-height-t2);
+    font-family: var(--font-neuehaas);
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.card-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image-section {
+    background-image: radial-gradient(#3e4646, #0f3335 40%, #061a1c, #061a1c);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-section img {
+    scale: 1.03;
+    height: 100%;
+    max-height: 500px;
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+.card-text{
+    background-color: #061a1c;
+    padding: 2rem;
+}
+
+.card-text p{
+    margin-bottom: 0;
+}
+
+.card-sm-title{
+    color: #fff;
+    font-size: var(--font-size-t7);
+    font-weight: var(--font-weight-t7);
+    letter-spacing: var(--letter-spacing-t7);
+    line-height: var(--line-height-t7) --tw-leading is not defined;
+}
+
+.card-sm-desc{
+    color: #9797a2;
+    font-size: var(--font-size-body-sm);
+    font-weight: var(--font-weight-body-sm);
+    letter-spacing: var(--letter-spacing-body-sm);
+    line-height: var(--line-height-body-sm);
+}

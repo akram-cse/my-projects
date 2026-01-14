@@ -1,0 +1,29 @@
+.header {
+    position: relative;
+    padding: 10px 0 0;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e3dc3;
+    text-shadow: 5px 4px 12px #c1c1c1;
+}
+
+.link-transparent {
+    color: #2f3133;
+    text-decoration: none;
+}
+
+.text-heading {
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #808596;
+}
+.has-child{
+    cursor: pointer;
+}
+.logo-default {
+    height: 50px;
+}
